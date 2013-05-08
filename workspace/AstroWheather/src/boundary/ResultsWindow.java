@@ -306,7 +306,7 @@ public class ResultsWindow extends javax.swing.JFrame {
         LinkedList<Forecast> forecastsPrint = new LinkedList<>();
         
         for (Forecast forecast : result) {
-            double temperature = 0;
+            double temperature = forecast.getForecast();
             
             switch (forecast.getScale()) {
                 case CELSIUS: //convert Kelvin to Celsius
